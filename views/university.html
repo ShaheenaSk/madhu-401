@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Courses</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+ 
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: static;
+            top: 0;
+            cursor: pointer;
+            border: 2px solid black;
+        }
+ 
+        .background {
+            background:blue;
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+        .nav-list {
+            width: 70%;
+            display: flex;
+            align-items: center;
+        }
+        .nav-list li {
+            list-style: none;
+            padding: 26px 30px;
+        }
+ 
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+        }
+ 
+        .nav-list li a:hover {
+            color: black;
+        }
+        .course{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+        }
+ 
+        .back {
+            background:white;
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+        .cour-list {
+            width: 69%;
+            display: flex;
+            align-items: left;
+        }
+        .cour-list li {
+            list-style: none;
+            padding: 26px 30px;
+            font-size: 25px;
+            color: blue;
+        }
+ 
+        .cour-list li a {
+            text-decoration: none;
+            color: black;
+        }
+ 
+        .cour-list li a:hover {
+            color: blue;
+        }
+        .rightNav{
+            width:40%;
+            height: 25px;
+            text-align: left;
+            padding:30px;
+        }
+        .cour-right {
+            width: 69%;
+            display: flex;
+            align-items: right;
+        }
+        .cour-right li {
+            list-style: none;
+            padding: 26px 30px;
+        }
+ 
+        .cour-right li a {
+            text-decoration: none;
+            color: black;
+        }
+ 
+        .cour-right li a:hover {
+            color:blue;
+        }
+        .btn{
+            background-color: blue;
+            color: black;
+            cursor: pointer;
+            width: 110px;
+            font-size: large;
+        }
+        hr{
+            border: 2px solid blue;
+        }
+        .page{
+            justify-content: center;
+            font-size: 25px;
+            position: absolute;
+            bottom: 100px;
+            left: 500px;
+        }
+        h1{
+            position: absolute;
+            top: 250px;
+            left: 300px;
+            font-size: 45px;
+            font-weight: bold;
+        }
+        p{
+            position: absolute;
+            top: 340px;
+            left: 300px;
+            font-size: 25px;
+        }
+        .p1{
+            position: absolute;
+            top: 400px;
+            left: 300px;
+            font-size: 25px;
+        }
+        #cont{
+            background-color: blue;
+            color: white;
+            font-size: 15px;
+            height: 40px;
+            width: 100px;
+            position: absolute;
+            bottom: 200px;
+            left: 300px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <li><a href="#ind">For Individuals</a></li>
+            <li><a href="#buss">For Bussiness</a></li>
+            <li><a href="#uni">For universities</a></li>
+        </ul>
+    </nav>
+    <nav class="course back">
+        <ul class="cour-list">
+            <li><a href="#cor">ONLINE COURSES</a></li>
+            <div class="rightNav">
+                <input type="text" name="search" id="search" placeholder="What do you want to learn?">
+            </div>
+        </ul>
+        <ul class="cour-right">
+            <li><a href="#ondeg">Online Degree</a></li>
+            <li><a href="#fin">Find your new career</a></li>
+            <li><a href="#lin" onclick="mail.html">Login</a></li>
+            <button class="btn" onclick="mail.html">Join for free</button>
+        </ul>
+    </nav>
+    <hr>
+    <h1>Strengthen employability to attract more students</h1>
+    <p>Equip students with the most in-demand skills and prepare them for job success.</p>
+    <p class="p1">Explore a range of in-demand roles across industries</p>
+    <button type="submit" id="cont">Contact Us</button>
+    <div class="page">
+        <a href="#">&lang;</a>
+        <a href="course.html">Home</a>
+        <a href="loading.html">Loading</a>
+        <a href="bussiness.html">Bussiness</a>
+        <a href="individual.html">Individual</a>
+        <a href="#">University</a>
+        <a href="#">&rang;</a>
+    </div>
+</body>
+</html>
